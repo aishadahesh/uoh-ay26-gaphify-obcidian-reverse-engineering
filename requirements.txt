@@ -1,0 +1,4 @@
+# The project runs with the Python standard library.
+# Optional: install langgraph to execute the workflow with a real StateGraph backend.
+# langgraph>=0.2
+# pytest>=8

@@ -1,0 +1,17 @@
+[project]
+name = "gaphify-obsidian-reverse-engineering"
+version = "0.1.0"
+description = "EX04 reverse engineering, graph-guided debugging, and token-efficiency evidence."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+agent = ["langgraph>=0.2"]
+test = ["pytest>=8"]
+
+[project.scripts]
+gaphify-re = "gaphify_re.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

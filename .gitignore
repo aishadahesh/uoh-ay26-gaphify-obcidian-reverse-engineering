@@ -1,0 +1,21 @@
+# Local environments
+.venv/
+venv/
+ENV/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Assignment/reference PDFs are kept locally but not submitted to git
+ref/
+*.egg-info/
