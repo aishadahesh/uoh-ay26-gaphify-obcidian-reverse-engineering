@@ -1,0 +1,939 @@
+# TODO / Work Checklist
+
+This checklist intentionally contains 900 granular tasks for project-management visibility. It tracks implementation, documentation, verification, and submission readiness for the EX04 project.
+
+## Project Setup And Repository Hygiene
+
+- [x] 001. Confirm repository root path is correct
+- [x] 002. Review evidence for: Confirm repository root path is correct
+- [x] 003. Confirm documentation mentions: Confirm repository root path is correct
+- [x] 004. Confirm assignment reference PDFs exist locally
+- [x] 005. Review evidence for: Confirm assignment reference PDFs exist locally
+- [x] 006. Confirm documentation mentions: Confirm assignment reference PDFs exist locally
+- [x] 007. Confirm reference PDFs are not intended for Git submission
+- [x] 008. Review evidence for: Confirm reference PDFs are not intended for Git submission
+- [x] 009. Confirm documentation mentions: Confirm reference PDFs are not intended for Git submission
+- [x] 010. Create `.gitignore` file
+- [x] 011. Review evidence for: Create `.gitignore` file
+- [x] 012. Confirm documentation mentions: Create `.gitignore` file
+- [x] 013. Ignore local virtual environment folder
+- [x] 014. Review evidence for: Ignore local virtual environment folder
+- [x] 015. Confirm documentation mentions: Ignore local virtual environment folder
+- [x] 016. Ignore Python bytecode caches
+- [x] 017. Review evidence for: Ignore Python bytecode caches
+- [x] 018. Confirm documentation mentions: Ignore Python bytecode caches
+- [x] 019. Ignore pytest cache output
+- [x] 020. Review evidence for: Ignore pytest cache output
+- [x] 021. Confirm documentation mentions: Ignore pytest cache output
+- [x] 022. Ignore coverage output
+- [x] 023. Review evidence for: Ignore coverage output
+- [x] 024. Confirm documentation mentions: Ignore coverage output
+- [x] 025. Ignore local editor folders
+- [x] 026. Review evidence for: Ignore local editor folders
+- [x] 027. Confirm documentation mentions: Ignore local editor folders
+- [x] 028. Ignore operating system metadata files
+- [x] 029. Review evidence for: Ignore operating system metadata files
+- [x] 030. Confirm documentation mentions: Ignore operating system metadata files
+- [x] 031. Ignore `ref/` assignment reference folder
+- [x] 032. Review evidence for: Ignore `ref/` assignment reference folder
+- [x] 033. Confirm documentation mentions: Ignore `ref/` assignment reference folder
+- [x] 034. Create `pyproject.toml`
+- [x] 035. Review evidence for: Create `pyproject.toml`
+- [x] 036. Confirm documentation mentions: Create `pyproject.toml`
+- [x] 037. Define project name
+- [x] 038. Review evidence for: Define project name
+- [x] 039. Confirm documentation mentions: Define project name
+- [x] 040. Define project version
+- [x] 041. Review evidence for: Define project version
+- [x] 042. Confirm documentation mentions: Define project version
+- [x] 043. Define project description
+- [x] 044. Review evidence for: Define project description
+- [x] 045. Confirm documentation mentions: Define project description
+- [x] 046. Set Python version requirement
+- [x] 047. Review evidence for: Set Python version requirement
+- [x] 048. Confirm documentation mentions: Set Python version requirement
+- [x] 049. Keep runtime dependencies minimal
+- [x] 050. Review evidence for: Keep runtime dependencies minimal
+- [x] 051. Confirm documentation mentions: Keep runtime dependencies minimal
+- [x] 052. Define optional agent dependencies
+- [x] 053. Review evidence for: Define optional agent dependencies
+- [x] 054. Confirm documentation mentions: Define optional agent dependencies
+- [x] 055. Define optional test dependencies
+- [x] 056. Review evidence for: Define optional test dependencies
+- [x] 057. Confirm documentation mentions: Define optional test dependencies
+- [x] 058. Define console script entry point
+- [x] 059. Review evidence for: Define console script entry point
+- [x] 060. Confirm documentation mentions: Define console script entry point
+- [x] 061. Configure unittest-compatible source path
+- [x] 062. Review evidence for: Configure unittest-compatible source path
+- [x] 063. Confirm documentation mentions: Configure unittest-compatible source path
+- [x] 064. Create `requirements.txt`
+- [x] 065. Review evidence for: Create `requirements.txt`
+- [x] 066. Confirm documentation mentions: Create `requirements.txt`
+- [x] 067. Document optional dependencies in requirements file
+- [x] 068. Review evidence for: Document optional dependencies in requirements file
+- [x] 069. Confirm documentation mentions: Document optional dependencies in requirements file
+- [x] 070. Create local `.venv` environment
+- [x] 071. Review evidence for: Create local `.venv` environment
+- [x] 072. Confirm documentation mentions: Create local `.venv` environment
+- [x] 073. Install project in editable mode
+- [x] 074. Review evidence for: Install project in editable mode
+- [x] 075. Confirm documentation mentions: Install project in editable mode
+- [x] 076. Verify package imports inside `.venv`
+- [x] 077. Review evidence for: Verify package imports inside `.venv`
+- [x] 078. Confirm documentation mentions: Verify package imports inside `.venv`
+- [x] 079. Verify CLI runs inside `.venv`
+- [x] 080. Review evidence for: Verify CLI runs inside `.venv`
+- [x] 081. Confirm documentation mentions: Verify CLI runs inside `.venv`
+- [x] 082. Check Git status after environment creation
+- [x] 083. Review evidence for: Check Git status after environment creation
+- [x] 084. Confirm documentation mentions: Check Git status after environment creation
+- [x] 085. Confirm `.venv/` appears ignored
+- [x] 086. Review evidence for: Confirm `.venv/` appears ignored
+- [x] 087. Confirm documentation mentions: Confirm `.venv/` appears ignored
+- [x] 088. Confirm `ref/` appears ignored
+- [x] 089. Review evidence for: Confirm `ref/` appears ignored
+- [x] 090. Confirm documentation mentions: Confirm `ref/` appears ignored
+- [x] 091. Remove generated source `__pycache__` folders
+- [x] 092. Review evidence for: Remove generated source `__pycache__` folders
+- [x] 093. Confirm documentation mentions: Remove generated source `__pycache__` folders
+
+## Assignment Interpretation
+
+- [x] 094. Read assignment overview
+- [x] 095. Review evidence for: Read assignment overview
+- [x] 096. Confirm documentation mentions: Read assignment overview
+- [x] 097. Identify required deliverables
+- [x] 098. Review evidence for: Identify required deliverables
+- [x] 099. Confirm documentation mentions: Identify required deliverables
+- [x] 100. Identify required README sections
+- [x] 101. Review evidence for: Identify required README sections
+- [x] 102. Confirm documentation mentions: Identify required README sections
+- [x] 103. Identify required repository structure
+- [x] 104. Review evidence for: Identify required repository structure
+- [x] 105. Confirm documentation mentions: Identify required repository structure
+- [x] 106. Identify required graph artifact
+- [x] 107. Review evidence for: Identify required graph artifact
+- [x] 108. Confirm documentation mentions: Identify required graph artifact
+- [x] 109. Identify required Obsidian vault pages
+- [x] 110. Review evidence for: Identify required Obsidian vault pages
+- [x] 111. Confirm documentation mentions: Identify required Obsidian vault pages
+- [x] 112. Identify required `index.md` page
+- [x] 113. Review evidence for: Identify required `index.md` page
+- [x] 114. Confirm documentation mentions: Identify required `index.md` page
+- [x] 115. Identify required `hot.md` page
+- [x] 116. Review evidence for: Identify required `hot.md` page
+- [x] 117. Confirm documentation mentions: Identify required `hot.md` page
+- [x] 118. Identify required bug analysis report
+- [x] 119. Review evidence for: Identify required bug analysis report
+- [x] 120. Confirm documentation mentions: Identify required bug analysis report
+- [x] 121. Identify required token-efficiency report
+- [x] 122. Review evidence for: Identify required token-efficiency report
+- [x] 123. Confirm documentation mentions: Identify required token-efficiency report
+- [x] 124. Identify required architecture block diagram
+- [x] 125. Review evidence for: Identify required architecture block diagram
+- [x] 126. Confirm documentation mentions: Identify required architecture block diagram
+- [x] 127. Identify required OOP diagram
+- [x] 128. Review evidence for: Identify required OOP diagram
+- [x] 129. Confirm documentation mentions: Identify required OOP diagram
+- [x] 130. Identify required agent workflow
+- [x] 131. Review evidence for: Identify required agent workflow
+- [x] 132. Confirm documentation mentions: Identify required agent workflow
+- [x] 133. Identify allowed agent frameworks
+- [x] 134. Review evidence for: Identify allowed agent frameworks
+- [x] 135. Confirm documentation mentions: Identify allowed agent frameworks
+- [x] 136. Choose LangGraph-compatible design
+- [x] 137. Review evidence for: Choose LangGraph-compatible design
+- [x] 138. Confirm documentation mentions: Choose LangGraph-compatible design
+- [x] 139. Identify requirement for before/after proof
+- [x] 140. Review evidence for: Identify requirement for before/after proof
+- [x] 141. Confirm documentation mentions: Identify requirement for before/after proof
+- [x] 142. Identify requirement for original extension
+- [x] 143. Review evidence for: Identify requirement for original extension
+- [x] 144. Confirm documentation mentions: Identify requirement for original extension
+- [x] 145. Identify professional software guideline documents
+- [x] 146. Review evidence for: Identify professional software guideline documents
+- [x] 147. Confirm documentation mentions: Identify professional software guideline documents
+- [x] 148. Identify docs folder expectation
+- [x] 149. Review evidence for: Identify docs folder expectation
+- [x] 150. Confirm documentation mentions: Identify docs folder expectation
+- [x] 151. Plan PRD document
+- [x] 152. Review evidence for: Plan PRD document
+- [x] 153. Confirm documentation mentions: Plan PRD document
+- [x] 154. Plan worklog document
+- [x] 155. Review evidence for: Plan worklog document
+- [x] 156. Confirm documentation mentions: Plan worklog document
+- [x] 157. Plan TODO checklist document
+- [x] 158. Review evidence for: Plan TODO checklist document
+- [x] 159. Confirm documentation mentions: Plan TODO checklist document
+- [x] 160. Plan reports folder
+- [x] 161. Review evidence for: Plan reports folder
+- [x] 162. Confirm documentation mentions: Plan reports folder
+- [x] 163. Plan artifacts folder
+- [x] 164. Review evidence for: Plan artifacts folder
+- [x] 165. Confirm documentation mentions: Plan artifacts folder
+- [x] 166. Plan data folder
+- [x] 167. Review evidence for: Plan data folder
+- [x] 168. Confirm documentation mentions: Plan data folder
+- [x] 169. Plan tests folder
+- [x] 170. Review evidence for: Plan tests folder
+- [x] 171. Confirm documentation mentions: Plan tests folder
+- [x] 172. Plan source folder
+- [x] 173. Review evidence for: Plan source folder
+- [x] 174. Confirm documentation mentions: Plan source folder
+- [x] 175. Plan Obsidian vault folder
+- [x] 176. Review evidence for: Plan Obsidian vault folder
+- [x] 177. Confirm documentation mentions: Plan Obsidian vault folder
+- [x] 178. Plan README expansion
+- [x] 179. Review evidence for: Plan README expansion
+- [x] 180. Confirm documentation mentions: Plan README expansion
+- [x] 181. Plan final verification commands
+- [x] 182. Review evidence for: Plan final verification commands
+- [x] 183. Confirm documentation mentions: Plan final verification commands
+
+## Case Selection And Scope
+
+- [x] 184. Choose compact Python debugging case
+- [x] 185. Review evidence for: Choose compact Python debugging case
+- [x] 186. Confirm documentation mentions: Choose compact Python debugging case
+- [x] 187. Prefer bounded scope over large dependency-heavy repo
+- [x] 188. Review evidence for: Prefer bounded scope over large dependency-heavy repo
+- [x] 189. Confirm documentation mentions: Prefer bounded scope over large dependency-heavy repo
+- [x] 190. Ensure selected case supports real bug reproduction
+- [x] 191. Review evidence for: Ensure selected case supports real bug reproduction
+- [x] 192. Confirm documentation mentions: Ensure selected case supports real bug reproduction
+- [x] 193. Ensure selected case supports reverse engineering narrative
+- [x] 194. Review evidence for: Ensure selected case supports reverse engineering narrative
+- [x] 195. Confirm documentation mentions: Ensure selected case supports reverse engineering narrative
+- [x] 196. Ensure selected case supports architecture diagram
+- [x] 197. Review evidence for: Ensure selected case supports architecture diagram
+- [x] 198. Confirm documentation mentions: Ensure selected case supports architecture diagram
+- [x] 199. Ensure selected case supports OOP diagram
+- [x] 200. Review evidence for: Ensure selected case supports OOP diagram
+- [x] 201. Confirm documentation mentions: Ensure selected case supports OOP diagram
+- [x] 202. Ensure selected case supports token comparison
+- [x] 203. Review evidence for: Ensure selected case supports token comparison
+- [x] 204. Confirm documentation mentions: Ensure selected case supports token comparison
+- [x] 205. Ensure selected case supports agent workflow
+- [x] 206. Review evidence for: Ensure selected case supports agent workflow
+- [x] 207. Confirm documentation mentions: Ensure selected case supports agent workflow
+- [x] 208. Preserve upstream buggy snapshot
+- [x] 209. Review evidence for: Preserve upstream buggy snapshot
+- [x] 210. Confirm documentation mentions: Preserve upstream buggy snapshot
+- [x] 211. Place upstream snapshot in `data/upstream_snapshot`
+- [x] 212. Review evidence for: Place upstream snapshot in `data/upstream_snapshot`
+- [x] 213. Confirm documentation mentions: Place upstream snapshot in `data/upstream_snapshot`
+- [x] 214. Document why the selected case was chosen
+- [x] 215. Review evidence for: Document why the selected case was chosen
+- [x] 216. Confirm documentation mentions: Document why the selected case was chosen
+- [x] 217. Document relationship to broken Python repository style
+- [x] 218. Review evidence for: Document relationship to broken Python repository style
+- [x] 219. Confirm documentation mentions: Document relationship to broken Python repository style
+- [x] 220. Avoid over-scoping the assignment
+- [x] 221. Review evidence for: Avoid over-scoping the assignment
+- [x] 222. Confirm documentation mentions: Avoid over-scoping the assignment
+- [x] 223. Keep source files under guideline size
+- [x] 224. Review evidence for: Keep source files under guideline size
+- [x] 225. Confirm documentation mentions: Keep source files under guideline size
+- [x] 226. Define scheduler problem domain
+- [x] 227. Review evidence for: Define scheduler problem domain
+- [x] 228. Confirm documentation mentions: Define scheduler problem domain
+- [x] 229. Define task input format
+- [x] 230. Review evidence for: Define task input format
+- [x] 231. Confirm documentation mentions: Define task input format
+- [x] 232. Define dependency behavior
+- [x] 233. Review evidence for: Define dependency behavior
+- [x] 234. Confirm documentation mentions: Define dependency behavior
+- [x] 235. Define expected forward dependency behavior
+- [x] 236. Review evidence for: Define expected forward dependency behavior
+- [x] 237. Confirm documentation mentions: Define expected forward dependency behavior
+- [x] 238. Define missing dependency behavior
+- [x] 239. Review evidence for: Define missing dependency behavior
+- [x] 240. Confirm documentation mentions: Define missing dependency behavior
+- [x] 241. Define cycle detection behavior
+- [x] 242. Review evidence for: Define cycle detection behavior
+- [x] 243. Confirm documentation mentions: Define cycle detection behavior
+- [x] 244. Define finish-time scheduling behavior
+- [x] 245. Review evidence for: Define finish-time scheduling behavior
+- [x] 246. Confirm documentation mentions: Define finish-time scheduling behavior
+- [x] 247. Define root cause hypothesis
+- [x] 248. Review evidence for: Define root cause hypothesis
+- [x] 249. Confirm documentation mentions: Define root cause hypothesis
+- [x] 250. Define fix strategy
+- [x] 251. Review evidence for: Define fix strategy
+- [x] 252. Confirm documentation mentions: Define fix strategy
+- [x] 253. Define validation evidence
+- [x] 254. Review evidence for: Define validation evidence
+- [x] 255. Confirm documentation mentions: Define validation evidence
+- [x] 256. Define optimization evidence
+- [x] 257. Review evidence for: Define optimization evidence
+- [x] 258. Confirm documentation mentions: Define optimization evidence
+- [x] 259. Define token-efficiency measurement method
+- [x] 260. Review evidence for: Define token-efficiency measurement method
+- [x] 261. Confirm documentation mentions: Define token-efficiency measurement method
+- [x] 262. Define graph-guided reading method
+- [x] 263. Review evidence for: Define graph-guided reading method
+- [x] 264. Confirm documentation mentions: Define graph-guided reading method
+- [x] 265. Define naive reading method
+- [x] 266. Review evidence for: Define naive reading method
+- [x] 267. Confirm documentation mentions: Define naive reading method
+- [x] 268. Define final acceptance criteria
+- [x] 269. Review evidence for: Define final acceptance criteria
+- [x] 270. Confirm documentation mentions: Define final acceptance criteria
+- [x] 271. Record scope in PRD
+- [x] 272. Review evidence for: Record scope in PRD
+- [x] 273. Confirm documentation mentions: Record scope in PRD
+
+## Source Package Structure
+
+- [x] 274. Create `src/gaphify_re` package
+- [x] 275. Review evidence for: Create `src/gaphify_re` package
+- [x] 276. Confirm documentation mentions: Create `src/gaphify_re` package
+- [x] 277. Create package `__init__.py`
+- [x] 278. Review evidence for: Create package `__init__.py`
+- [x] 279. Confirm documentation mentions: Create package `__init__.py`
+- [x] 280. Define package version
+- [x] 281. Review evidence for: Define package version
+- [x] 282. Confirm documentation mentions: Define package version
+- [x] 283. Create module entry point
+- [x] 284. Review evidence for: Create module entry point
+- [x] 285. Confirm documentation mentions: Create module entry point
+- [x] 286. Create CLI module
+- [x] 287. Review evidence for: Create CLI module
+- [x] 288. Confirm documentation mentions: Create CLI module
+- [x] 289. Create domain module
+- [x] 290. Review evidence for: Create domain module
+- [x] 291. Confirm documentation mentions: Create domain module
+- [x] 292. Create parser module
+- [x] 293. Review evidence for: Create parser module
+- [x] 294. Confirm documentation mentions: Create parser module
+- [x] 295. Create scheduler module
+- [x] 296. Review evidence for: Create scheduler module
+- [x] 297. Confirm documentation mentions: Create scheduler module
+- [x] 298. Create graph builder module
+- [x] 299. Review evidence for: Create graph builder module
+- [x] 300. Confirm documentation mentions: Create graph builder module
+- [x] 301. Create token meter module
+- [x] 302. Review evidence for: Create token meter module
+- [x] 303. Confirm documentation mentions: Create token meter module
+- [x] 304. Create agent workflow module
+- [x] 305. Review evidence for: Create agent workflow module
+- [x] 306. Confirm documentation mentions: Create agent workflow module
+- [x] 307. Separate domain objects from parser logic
+- [x] 308. Review evidence for: Separate domain objects from parser logic
+- [x] 309. Confirm documentation mentions: Separate domain objects from parser logic
+- [x] 310. Separate parser logic from scheduling logic
+- [x] 311. Review evidence for: Separate parser logic from scheduling logic
+- [x] 312. Confirm documentation mentions: Separate parser logic from scheduling logic
+- [x] 313. Separate graph extraction from business logic
+- [x] 314. Review evidence for: Separate graph extraction from business logic
+- [x] 315. Confirm documentation mentions: Separate graph extraction from business logic
+- [x] 316. Separate token measurement from agent workflow
+- [x] 317. Review evidence for: Separate token measurement from agent workflow
+- [x] 318. Confirm documentation mentions: Separate token measurement from agent workflow
+- [x] 319. Separate CLI orchestration from core functions
+- [x] 320. Review evidence for: Separate CLI orchestration from core functions
+- [x] 321. Confirm documentation mentions: Separate CLI orchestration from core functions
+- [x] 322. Avoid global mutable state
+- [x] 323. Review evidence for: Avoid global mutable state
+- [x] 324. Confirm documentation mentions: Avoid global mutable state
+- [x] 325. Use dataclasses for domain records
+- [x] 326. Review evidence for: Use dataclasses for domain records
+- [x] 327. Confirm documentation mentions: Use dataclasses for domain records
+- [x] 328. Use explicit exceptions for parse failures
+- [x] 329. Review evidence for: Use explicit exceptions for parse failures
+- [x] 330. Confirm documentation mentions: Use explicit exceptions for parse failures
+- [x] 331. Use explicit exceptions for cycle failures
+- [x] 332. Review evidence for: Use explicit exceptions for cycle failures
+- [x] 333. Confirm documentation mentions: Use explicit exceptions for cycle failures
+- [x] 334. Keep modules focused
+- [x] 335. Review evidence for: Keep modules focused
+- [x] 336. Confirm documentation mentions: Keep modules focused
+- [x] 337. Keep code ASCII-compatible
+- [x] 338. Review evidence for: Keep code ASCII-compatible
+- [x] 339. Confirm documentation mentions: Keep code ASCII-compatible
+- [x] 340. Keep comments purposeful
+- [x] 341. Review evidence for: Keep comments purposeful
+- [x] 342. Confirm documentation mentions: Keep comments purposeful
+- [x] 343. Keep docstrings explanatory
+- [x] 344. Review evidence for: Keep docstrings explanatory
+- [x] 345. Confirm documentation mentions: Keep docstrings explanatory
+- [x] 346. Use type hints for public functions
+- [x] 347. Review evidence for: Use type hints for public functions
+- [x] 348. Confirm documentation mentions: Use type hints for public functions
+- [x] 349. Use deterministic ordering in algorithms
+- [x] 350. Review evidence for: Use deterministic ordering in algorithms
+- [x] 351. Confirm documentation mentions: Use deterministic ordering in algorithms
+- [x] 352. Use standard library where possible
+- [x] 353. Review evidence for: Use standard library where possible
+- [x] 354. Confirm documentation mentions: Use standard library where possible
+- [x] 355. Avoid unnecessary dependencies
+- [x] 356. Review evidence for: Avoid unnecessary dependencies
+- [x] 357. Confirm documentation mentions: Avoid unnecessary dependencies
+- [x] 358. Make package runnable with `python -m gaphify_re`
+- [x] 359. Review evidence for: Make package runnable with `python -m gaphify_re`
+- [x] 360. Confirm documentation mentions: Make package runnable with `python -m gaphify_re`
+- [x] 361. Make CLI commands easy to verify
+- [x] 362. Review evidence for: Make CLI commands easy to verify
+- [x] 363. Confirm documentation mentions: Make CLI commands easy to verify
+
+## Domain Model
+
+- [x] 364. Define `Task` dataclass
+- [x] 365. Review evidence for: Define `Task` dataclass
+- [x] 366. Confirm documentation mentions: Define `Task` dataclass
+- [x] 367. Add task id field
+- [x] 368. Review evidence for: Add task id field
+- [x] 369. Confirm documentation mentions: Add task id field
+- [x] 370. Add title field
+- [x] 371. Review evidence for: Add title field
+- [x] 372. Confirm documentation mentions: Add title field
+- [x] 373. Add duration field
+- [x] 374. Review evidence for: Add duration field
+- [x] 375. Confirm documentation mentions: Add duration field
+- [x] 376. Add dependencies field
+- [x] 377. Review evidence for: Add dependencies field
+- [x] 378. Confirm documentation mentions: Add dependencies field
+- [x] 379. Make `Task` immutable
+- [x] 380. Review evidence for: Make `Task` immutable
+- [x] 381. Confirm documentation mentions: Make `Task` immutable
+- [x] 382. Represent dependencies as tuple
+- [x] 383. Review evidence for: Represent dependencies as tuple
+- [x] 384. Confirm documentation mentions: Represent dependencies as tuple
+- [x] 385. Implement `finish_time` method
+- [x] 386. Review evidence for: Implement `finish_time` method
+- [x] 387. Confirm documentation mentions: Implement `finish_time` method
+- [x] 388. Handle tasks without dependencies
+- [x] 389. Review evidence for: Handle tasks without dependencies
+- [x] 390. Confirm documentation mentions: Handle tasks without dependencies
+- [x] 391. Handle tasks with multiple dependencies
+- [x] 392. Review evidence for: Handle tasks with multiple dependencies
+- [x] 393. Confirm documentation mentions: Handle tasks with multiple dependencies
+- [x] 394. Use dependency finish map
+- [x] 395. Review evidence for: Use dependency finish map
+- [x] 396. Confirm documentation mentions: Use dependency finish map
+- [x] 397. Choose max dependency finish time
+- [x] 398. Review evidence for: Choose max dependency finish time
+- [x] 399. Confirm documentation mentions: Choose max dependency finish time
+- [x] 400. Add task duration to ready time
+- [x] 401. Review evidence for: Add task duration to ready time
+- [x] 402. Confirm documentation mentions: Add task duration to ready time
+- [x] 403. Define `ProjectPlan` dataclass
+- [x] 404. Review evidence for: Define `ProjectPlan` dataclass
+- [x] 405. Confirm documentation mentions: Define `ProjectPlan` dataclass
+- [x] 406. Store tasks by id
+- [x] 407. Review evidence for: Store tasks by id
+- [x] 408. Confirm documentation mentions: Store tasks by id
+- [x] 409. Add task insertion method
+- [x] 410. Review evidence for: Add task insertion method
+- [x] 411. Confirm documentation mentions: Add task insertion method
+- [x] 412. Reject duplicate task ids
+- [x] 413. Review evidence for: Reject duplicate task ids
+- [x] 414. Confirm documentation mentions: Reject duplicate task ids
+- [x] 415. Expose root task helper
+- [x] 416. Review evidence for: Expose root task helper
+- [x] 417. Confirm documentation mentions: Expose root task helper
+- [x] 418. Keep duplicate validation in plan object
+- [x] 419. Review evidence for: Keep duplicate validation in plan object
+- [x] 420. Confirm documentation mentions: Keep duplicate validation in plan object
+- [x] 421. Avoid parser duplicating plan insertion behavior
+- [x] 422. Review evidence for: Avoid parser duplicating plan insertion behavior
+- [x] 423. Confirm documentation mentions: Avoid parser duplicating plan insertion behavior
+- [x] 424. Keep domain module independent from CLI
+- [x] 425. Review evidence for: Keep domain module independent from CLI
+- [x] 426. Confirm documentation mentions: Keep domain module independent from CLI
+- [x] 427. Keep domain module independent from tests
+- [x] 428. Review evidence for: Keep domain module independent from tests
+- [x] 429. Confirm documentation mentions: Keep domain module independent from tests
+- [x] 430. Keep domain module independent from graph builder
+- [x] 431. Review evidence for: Keep domain module independent from graph builder
+- [x] 432. Confirm documentation mentions: Keep domain module independent from graph builder
+- [x] 433. Document `Task` responsibility
+- [x] 434. Review evidence for: Document `Task` responsibility
+- [x] 435. Confirm documentation mentions: Document `Task` responsibility
+- [x] 436. Document `ProjectPlan` responsibility
+- [x] 437. Review evidence for: Document `ProjectPlan` responsibility
+- [x] 438. Confirm documentation mentions: Document `ProjectPlan` responsibility
+- [x] 439. Verify domain classes are importable
+- [x] 440. Review evidence for: Verify domain classes are importable
+- [x] 441. Confirm documentation mentions: Verify domain classes are importable
+- [x] 442. Verify roots helper returns dependency-free tasks
+- [x] 443. Review evidence for: Verify roots helper returns dependency-free tasks
+- [x] 444. Confirm documentation mentions: Verify roots helper returns dependency-free tasks
+- [x] 445. Verify finish-time math with scheduler tests
+- [x] 446. Review evidence for: Verify finish-time math with scheduler tests
+- [x] 447. Confirm documentation mentions: Verify finish-time math with scheduler tests
+- [x] 448. Avoid hidden IO in domain module
+- [x] 449. Review evidence for: Avoid hidden IO in domain module
+- [x] 450. Confirm documentation mentions: Avoid hidden IO in domain module
+- [x] 451. Avoid side effects in domain methods
+- [x] 452. Review evidence for: Avoid side effects in domain methods
+- [x] 453. Confirm documentation mentions: Avoid side effects in domain methods
+- [x] 454. Keep model simple enough for diagrams
+- [x] 455. Review evidence for: Keep model simple enough for diagrams
+- [x] 456. Confirm documentation mentions: Keep model simple enough for diagrams
+
+## Parser Implementation
+
+- [x] 457. Define `ParseError` exception
+- [x] 458. Review evidence for: Define `ParseError` exception
+- [x] 459. Confirm documentation mentions: Define `ParseError` exception
+- [x] 460. Implement `parse_task_line`
+- [x] 461. Review evidence for: Implement `parse_task_line`
+- [x] 462. Confirm documentation mentions: Implement `parse_task_line`
+- [x] 463. Split task line by pipe delimiter
+- [x] 464. Review evidence for: Split task line by pipe delimiter
+- [x] 465. Confirm documentation mentions: Split task line by pipe delimiter
+- [x] 466. Trim whitespace from all fields
+- [x] 467. Review evidence for: Trim whitespace from all fields
+- [x] 468. Confirm documentation mentions: Trim whitespace from all fields
+- [x] 469. Validate four-column structure
+- [x] 470. Review evidence for: Validate four-column structure
+- [x] 471. Confirm documentation mentions: Validate four-column structure
+- [x] 472. Validate task id is present
+- [x] 473. Review evidence for: Validate task id is present
+- [x] 474. Confirm documentation mentions: Validate task id is present
+- [x] 475. Validate title is present
+- [x] 476. Review evidence for: Validate title is present
+- [x] 477. Confirm documentation mentions: Validate title is present
+- [x] 478. Parse duration as integer
+- [x] 479. Review evidence for: Parse duration as integer
+- [x] 480. Confirm documentation mentions: Parse duration as integer
+- [x] 481. Reject non-integer duration
+- [x] 482. Review evidence for: Reject non-integer duration
+- [x] 483. Confirm documentation mentions: Reject non-integer duration
+- [x] 484. Reject non-positive duration
+- [x] 485. Review evidence for: Reject non-positive duration
+- [x] 486. Confirm documentation mentions: Reject non-positive duration
+- [x] 487. Parse comma-separated dependencies
+- [x] 488. Review evidence for: Parse comma-separated dependencies
+- [x] 489. Confirm documentation mentions: Parse comma-separated dependencies
+- [x] 490. Ignore empty dependency entries
+- [x] 491. Review evidence for: Ignore empty dependency entries
+- [x] 492. Confirm documentation mentions: Ignore empty dependency entries
+- [x] 493. Return `Task` object from line parser
+- [x] 494. Review evidence for: Return `Task` object from line parser
+- [x] 495. Confirm documentation mentions: Return `Task` object from line parser
+- [x] 496. Implement `parse_plan`
+- [x] 497. Review evidence for: Implement `parse_plan`
+- [x] 498. Confirm documentation mentions: Implement `parse_plan`
+- [x] 499. Skip blank input lines
+- [x] 500. Review evidence for: Skip blank input lines
+- [x] 501. Confirm documentation mentions: Skip blank input lines
+- [x] 502. Skip comment input lines
+- [x] 503. Review evidence for: Skip comment input lines
+- [x] 504. Confirm documentation mentions: Skip comment input lines
+- [x] 505. Parse all rows before dependency validation
+- [x] 506. Review evidence for: Parse all rows before dependency validation
+- [x] 507. Confirm documentation mentions: Parse all rows before dependency validation
+- [x] 508. Collect complete task id set
+- [x] 509. Review evidence for: Collect complete task id set
+- [x] 510. Confirm documentation mentions: Collect complete task id set
+- [x] 511. Collect missing dependency references
+- [x] 512. Review evidence for: Collect missing dependency references
+- [x] 513. Confirm documentation mentions: Collect missing dependency references
+- [x] 514. Sort missing dependency names for deterministic errors
+- [x] 515. Review evidence for: Sort missing dependency names for deterministic errors
+- [x] 516. Confirm documentation mentions: Sort missing dependency names for deterministic errors
+- [x] 517. Raise `ParseError` for unknown dependencies
+- [x] 518. Review evidence for: Raise `ParseError` for unknown dependencies
+- [x] 519. Confirm documentation mentions: Raise `ParseError` for unknown dependencies
+- [x] 520. Create `ProjectPlan` after validation
+- [x] 521. Review evidence for: Create `ProjectPlan` after validation
+- [x] 522. Confirm documentation mentions: Create `ProjectPlan` after validation
+- [x] 523. Add tasks to plan through `ProjectPlan.add`
+- [x] 524. Review evidence for: Add tasks to plan through `ProjectPlan.add`
+- [x] 525. Confirm documentation mentions: Add tasks to plan through `ProjectPlan.add`
+- [x] 526. Preserve duplicate id behavior
+- [x] 527. Review evidence for: Preserve duplicate id behavior
+- [x] 528. Confirm documentation mentions: Preserve duplicate id behavior
+- [x] 529. Document two-pass parser strategy
+- [x] 530. Review evidence for: Document two-pass parser strategy
+- [x] 531. Confirm documentation mentions: Document two-pass parser strategy
+- [x] 532. Document original upstream bug
+- [x] 533. Review evidence for: Document original upstream bug
+- [x] 534. Confirm documentation mentions: Document original upstream bug
+- [x] 535. Keep line parser testable independently
+- [x] 536. Review evidence for: Keep line parser testable independently
+- [x] 537. Confirm documentation mentions: Keep line parser testable independently
+- [x] 538. Keep plan parser deterministic
+- [x] 539. Review evidence for: Keep plan parser deterministic
+- [x] 540. Confirm documentation mentions: Keep plan parser deterministic
+- [x] 541. Avoid order-sensitive dependency validation
+- [x] 542. Review evidence for: Avoid order-sensitive dependency validation
+- [x] 543. Confirm documentation mentions: Avoid order-sensitive dependency validation
+- [x] 544. Avoid scheduler logic in parser
+- [x] 545. Review evidence for: Avoid scheduler logic in parser
+- [x] 546. Confirm documentation mentions: Avoid scheduler logic in parser
+- [x] 547. Verify parser imports domain objects only
+- [x] 548. Review evidence for: Verify parser imports domain objects only
+- [x] 549. Confirm documentation mentions: Verify parser imports domain objects only
+
+## Scheduler Implementation
+
+- [x] 550. Define `CycleError` exception
+- [x] 551. Review evidence for: Define `CycleError` exception
+- [x] 552. Confirm documentation mentions: Define `CycleError` exception
+- [x] 553. Implement topological ordering
+- [x] 554. Review evidence for: Implement topological ordering
+- [x] 555. Confirm documentation mentions: Implement topological ordering
+- [x] 556. Copy remaining tasks into local structure
+- [x] 557. Review evidence for: Copy remaining tasks into local structure
+- [x] 558. Confirm documentation mentions: Copy remaining tasks into local structure
+- [x] 559. Track completed task ids
+- [x] 560. Review evidence for: Track completed task ids
+- [x] 561. Confirm documentation mentions: Track completed task ids
+- [x] 562. Track ordered tasks
+- [x] 563. Review evidence for: Track ordered tasks
+- [x] 564. Confirm documentation mentions: Track ordered tasks
+- [x] 565. Find ready tasks whose dependencies are completed
+- [x] 566. Review evidence for: Find ready tasks whose dependencies are completed
+- [x] 567. Confirm documentation mentions: Find ready tasks whose dependencies are completed
+- [x] 568. Sort ready tasks by id for deterministic order
+- [x] 569. Review evidence for: Sort ready tasks by id for deterministic order
+- [x] 570. Confirm documentation mentions: Sort ready tasks by id for deterministic order
+- [x] 571. Append ready tasks to ordered output
+- [x] 572. Review evidence for: Append ready tasks to ordered output
+- [x] 573. Confirm documentation mentions: Append ready tasks to ordered output
+- [x] 574. Remove scheduled tasks from remaining map
+- [x] 575. Review evidence for: Remove scheduled tasks from remaining map
+- [x] 576. Confirm documentation mentions: Remove scheduled tasks from remaining map
+- [x] 577. Detect unresolved dependency cycle
+- [x] 578. Review evidence for: Detect unresolved dependency cycle
+- [x] 579. Confirm documentation mentions: Detect unresolved dependency cycle
+- [x] 580. Report cycle candidates deterministically
+- [x] 581. Review evidence for: Report cycle candidates deterministically
+- [x] 582. Confirm documentation mentions: Report cycle candidates deterministically
+- [x] 583. Implement `schedule` function
+- [x] 584. Review evidence for: Implement `schedule` function
+- [x] 585. Confirm documentation mentions: Implement `schedule` function
+- [x] 586. Initialize finish-time dictionary
+- [x] 587. Review evidence for: Initialize finish-time dictionary
+- [x] 588. Confirm documentation mentions: Initialize finish-time dictionary
+- [x] 589. Use topological order for scheduling
+- [x] 590. Review evidence for: Use topological order for scheduling
+- [x] 591. Confirm documentation mentions: Use topological order for scheduling
+- [x] 592. Compute each task finish time
+- [x] 593. Review evidence for: Compute each task finish time
+- [x] 594. Confirm documentation mentions: Compute each task finish time
+- [x] 595. Return finish times by task id
+- [x] 596. Review evidence for: Return finish times by task id
+- [x] 597. Confirm documentation mentions: Return finish times by task id
+- [x] 598. Keep scheduler independent of raw text format
+- [x] 599. Review evidence for: Keep scheduler independent of raw text format
+- [x] 600. Confirm documentation mentions: Keep scheduler independent of raw text format
+- [x] 601. Keep scheduler independent of CLI
+- [x] 602. Review evidence for: Keep scheduler independent of CLI
+- [x] 603. Confirm documentation mentions: Keep scheduler independent of CLI
+- [x] 604. Keep scheduler independent of graph builder
+- [x] 605. Review evidence for: Keep scheduler independent of graph builder
+- [x] 606. Confirm documentation mentions: Keep scheduler independent of graph builder
+- [x] 607. Verify schedule handles forward dependency after parsing
+- [x] 608. Review evidence for: Verify schedule handles forward dependency after parsing
+- [x] 609. Confirm documentation mentions: Verify schedule handles forward dependency after parsing
+- [x] 610. Verify schedule handles roots first
+- [x] 611. Review evidence for: Verify schedule handles roots first
+- [x] 612. Confirm documentation mentions: Verify schedule handles roots first
+- [x] 613. Verify cycle detection raises exception
+- [x] 614. Review evidence for: Verify cycle detection raises exception
+- [x] 615. Confirm documentation mentions: Verify cycle detection raises exception
+- [x] 616. Verify missing dependencies remain parser concern
+- [x] 617. Review evidence for: Verify missing dependencies remain parser concern
+- [x] 618. Confirm documentation mentions: Verify missing dependencies remain parser concern
+- [x] 619. Document scheduler responsibility
+- [x] 620. Review evidence for: Document scheduler responsibility
+- [x] 621. Confirm documentation mentions: Document scheduler responsibility
+- [x] 622. Avoid mutating `ProjectPlan` during scheduling
+- [x] 623. Review evidence for: Avoid mutating `ProjectPlan` during scheduling
+- [x] 624. Confirm documentation mentions: Avoid mutating `ProjectPlan` during scheduling
+- [x] 625. Avoid recursive traversal for simple DAG
+- [x] 626. Review evidence for: Avoid recursive traversal for simple DAG
+- [x] 627. Confirm documentation mentions: Avoid recursive traversal for simple DAG
+- [x] 628. Keep implementation under guideline size
+- [x] 629. Review evidence for: Keep implementation under guideline size
+- [x] 630. Confirm documentation mentions: Keep implementation under guideline size
+- [x] 631. Keep error messages readable
+- [x] 632. Review evidence for: Keep error messages readable
+- [x] 633. Confirm documentation mentions: Keep error messages readable
+- [x] 634. Keep algorithm easy to diagram
+- [x] 635. Review evidence for: Keep algorithm easy to diagram
+- [x] 636. Confirm documentation mentions: Keep algorithm easy to diagram
+- [x] 637. Keep tests close to behavior
+- [x] 638. Review evidence for: Keep tests close to behavior
+- [x] 639. Confirm documentation mentions: Keep tests close to behavior
+
+## Bug Reproduction
+
+- [x] 640. Preserve original one-pass parser snapshot
+- [x] 641. Review evidence for: Preserve original one-pass parser snapshot
+- [x] 642. Confirm documentation mentions: Preserve original one-pass parser snapshot
+- [x] 643. Create upstream snapshot test file
+- [x] 644. Review evidence for: Create upstream snapshot test file
+- [x] 645. Confirm documentation mentions: Create upstream snapshot test file
+- [x] 646. Load snapshot dynamically from disk
+- [x] 647. Review evidence for: Load snapshot dynamically from disk
+- [x] 648. Confirm documentation mentions: Load snapshot dynamically from disk
+- [x] 649. Avoid importing snapshot as package module
+- [x] 650. Review evidence for: Avoid importing snapshot as package module
+- [x] 651. Confirm documentation mentions: Avoid importing snapshot as package module
+- [x] 652. Define forward dependency sample input
+- [x] 653. Review evidence for: Define forward dependency sample input
+- [x] 654. Confirm documentation mentions: Define forward dependency sample input
+- [x] 655. Run original parser on sample input
+- [x] 656. Review evidence for: Run original parser on sample input
+- [x] 657. Confirm documentation mentions: Run original parser on sample input
+- [x] 658. Assert original parser raises `ValueError`
+- [x] 659. Review evidence for: Assert original parser raises `ValueError`
+- [x] 660. Confirm documentation mentions: Assert original parser raises `ValueError`
+- [x] 661. Assert original error mentions unknown dependency
+- [x] 662. Review evidence for: Assert original error mentions unknown dependency
+- [x] 663. Confirm documentation mentions: Assert original error mentions unknown dependency
+- [x] 664. Document original failure in bug report
+- [x] 665. Review evidence for: Document original failure in bug report
+- [x] 666. Confirm documentation mentions: Document original failure in bug report
+- [x] 667. Document original failure in README
+- [x] 668. Review evidence for: Document original failure in README
+- [x] 669. Confirm documentation mentions: Document original failure in README
+- [x] 670. Document original failure in worklog
+- [x] 671. Review evidence for: Document original failure in worklog
+- [x] 672. Confirm documentation mentions: Document original failure in worklog
+- [x] 673. Use same sample for fixed demo
+- [x] 674. Review evidence for: Use same sample for fixed demo
+- [x] 675. Confirm documentation mentions: Use same sample for fixed demo
+- [x] 676. Prove before state separately from after state
+- [x] 677. Review evidence for: Prove before state separately from after state
+- [x] 678. Confirm documentation mentions: Prove before state separately from after state
+- [x] 679. Keep snapshot unchanged after fix
+- [x] 680. Review evidence for: Keep snapshot unchanged after fix
+- [x] 681. Confirm documentation mentions: Keep snapshot unchanged after fix
+- [x] 682. Avoid editing upstream snapshot to pass tests
+- [x] 683. Review evidence for: Avoid editing upstream snapshot to pass tests
+- [x] 684. Confirm documentation mentions: Avoid editing upstream snapshot to pass tests
+- [x] 685. Treat upstream snapshot as evidence
+- [x] 686. Review evidence for: Treat upstream snapshot as evidence
+- [x] 687. Confirm documentation mentions: Treat upstream snapshot as evidence
+- [x] 688. Mention before/after in Obsidian page
+- [x] 689. Review evidence for: Mention before/after in Obsidian page
+- [x] 690. Confirm documentation mentions: Mention before/after in Obsidian page
+- [x] 691. Connect failure to parser hot path
+- [x] 692. Review evidence for: Connect failure to parser hot path
+- [x] 693. Confirm documentation mentions: Connect failure to parser hot path
+- [x] 694. Connect failure to token-efficient workflow
+- [x] 695. Review evidence for: Connect failure to token-efficient workflow
+- [x] 696. Confirm documentation mentions: Connect failure to token-efficient workflow
+- [x] 697. Connect failure to optimization report
+- [x] 698. Review evidence for: Connect failure to optimization report
+- [x] 699. Confirm documentation mentions: Connect failure to optimization report
+- [x] 700. Verify test file discovers under unittest
+- [x] 701. Review evidence for: Verify test file discovers under unittest
+- [x] 702. Confirm documentation mentions: Verify test file discovers under unittest
+- [x] 703. Verify test count increased after adding reproduction test
+- [x] 704. Review evidence for: Verify test count increased after adding reproduction test
+- [x] 705. Confirm documentation mentions: Verify test count increased after adding reproduction test
+- [x] 706. Keep reproduction test deterministic
+- [x] 707. Review evidence for: Keep reproduction test deterministic
+- [x] 708. Confirm documentation mentions: Keep reproduction test deterministic
+- [x] 709. Keep reproduction input minimal
+- [x] 710. Review evidence for: Keep reproduction input minimal
+- [x] 711. Confirm documentation mentions: Keep reproduction input minimal
+- [x] 712. Keep reproduction aligned with documented symptom
+- [x] 713. Review evidence for: Keep reproduction aligned with documented symptom
+- [x] 714. Confirm documentation mentions: Keep reproduction aligned with documented symptom
+- [x] 715. Avoid external dependencies for reproduction
+- [x] 716. Review evidence for: Avoid external dependencies for reproduction
+- [x] 717. Confirm documentation mentions: Avoid external dependencies for reproduction
+- [x] 718. Avoid network access for reproduction
+- [x] 719. Review evidence for: Avoid network access for reproduction
+- [x] 720. Confirm documentation mentions: Avoid network access for reproduction
+- [x] 721. Avoid relying on Git history for reproduction
+- [x] 722. Review evidence for: Avoid relying on Git history for reproduction
+- [x] 723. Confirm documentation mentions: Avoid relying on Git history for reproduction
+- [x] 724. Make bug auditable from repository files
+- [x] 725. Review evidence for: Make bug auditable from repository files
+- [x] 726. Confirm documentation mentions: Make bug auditable from repository files
+
+## Fixed Behavior Tests
+
+- [x] 727. Create parser test module
+- [x] 728. Review evidence for: Create parser test module
+- [x] 729. Confirm documentation mentions: Create parser test module
+- [x] 730. Test forward dependency succeeds after fix
+- [x] 731. Review evidence for: Test forward dependency succeeds after fix
+- [x] 732. Confirm documentation mentions: Test forward dependency succeeds after fix
+- [x] 733. Test resulting topological order
+- [x] 734. Review evidence for: Test resulting topological order
+- [x] 735. Confirm documentation mentions: Test resulting topological order
+- [x] 736. Test missing dependency still fails
+- [x] 737. Review evidence for: Test missing dependency still fails
+- [x] 738. Confirm documentation mentions: Test missing dependency still fails
+- [x] 739. Test schedule finish times
+- [x] 740. Review evidence for: Test schedule finish times
+- [x] 741. Confirm documentation mentions: Test schedule finish times
+- [x] 742. Test cycle detection
+- [x] 743. Review evidence for: Test cycle detection
+- [x] 744. Confirm documentation mentions: Test cycle detection
+- [x] 745. Create token meter test module
+- [x] 746. Review evidence for: Create token meter test module
+- [x] 747. Confirm documentation mentions: Create token meter test module
+- [x] 748. Test token estimate is positive
+- [x] 749. Review evidence for: Test token estimate is positive
+- [x] 750. Confirm documentation mentions: Test token estimate is positive
+- [x] 751. Test token estimate scales with text length
+- [x] 752. Review evidence for: Test token estimate scales with text length
+- [x] 753. Confirm documentation mentions: Test token estimate scales with text length
+- [x] 754. Use standard unittest framework
+- [x] 755. Review evidence for: Use standard unittest framework
+- [x] 756. Confirm documentation mentions: Use standard unittest framework
+- [x] 757. Avoid required pytest dependency
+- [x] 758. Review evidence for: Avoid required pytest dependency
+- [x] 759. Confirm documentation mentions: Avoid required pytest dependency
+- [x] 760. Run all tests from repository root
+- [x] 761. Review evidence for: Run all tests from repository root
+- [x] 762. Confirm documentation mentions: Run all tests from repository root
+- [x] 763. Run tests inside `.venv`
+- [x] 764. Review evidence for: Run tests inside `.venv`
+- [x] 765. Confirm documentation mentions: Run tests inside `.venv`
+- [x] 766. Document test command in README
+- [x] 767. Review evidence for: Document test command in README
+- [x] 768. Confirm documentation mentions: Document test command in README
+- [x] 769. Document test command in PRD acceptance criteria
+- [x] 770. Review evidence for: Document test command in PRD acceptance criteria
+- [x] 771. Confirm documentation mentions: Document test command in PRD acceptance criteria
+- [x] 772. Keep tests clear and readable
+- [x] 773. Review evidence for: Keep tests clear and readable
+- [x] 774. Confirm documentation mentions: Keep tests clear and readable
+- [x] 775. Keep sample inputs inline where small
+- [x] 776. Review evidence for: Keep sample inputs inline where small
+- [x] 777. Confirm documentation mentions: Keep sample inputs inline where small
+- [x] 778. Assert exact schedule output for demo case
+- [x] 779. Review evidence for: Assert exact schedule output for demo case
+- [x] 780. Confirm documentation mentions: Assert exact schedule output for demo case
+- [x] 781. Assert exception type for missing dependency
+- [x] 782. Review evidence for: Assert exception type for missing dependency
+- [x] 783. Confirm documentation mentions: Assert exception type for missing dependency
+- [x] 784. Assert exception type for cycles
+- [x] 785. Review evidence for: Assert exception type for cycles
+- [x] 786. Confirm documentation mentions: Assert exception type for cycles
+- [x] 787. Avoid brittle timing-based tests
+- [x] 788. Review evidence for: Avoid brittle timing-based tests
+- [x] 789. Confirm documentation mentions: Avoid brittle timing-based tests
+- [x] 790. Avoid filesystem dependency in core parser tests
+- [x] 791. Review evidence for: Avoid filesystem dependency in core parser tests
+- [x] 792. Confirm documentation mentions: Avoid filesystem dependency in core parser tests
+- [x] 793. Keep upstream snapshot test isolated
+- [x] 794. Review evidence for: Keep upstream snapshot test isolated
+- [x] 795. Confirm documentation mentions: Keep upstream snapshot test isolated
+- [x] 796. Confirm test discovery finds all test modules
+- [x] 797. Review evidence for: Confirm test discovery finds all test modules
+- [x] 798. Confirm documentation mentions: Confirm test discovery finds all test modules
+- [x] 799. Confirm seventeen tests pass
+- [x] 800. Review evidence for: Confirm seventeen tests pass
+- [x] 801. Confirm documentation mentions: Confirm seventeen tests pass
+- [x] 802. Record verification result in final summary
+- [x] 803. Review evidence for: Record verification result in final summary
+- [x] 804. Confirm documentation mentions: Record verification result in final summary
+- [x] 805. Clean generated source caches after tests
+- [x] 806. Review evidence for: Clean generated source caches after tests
+- [x] 807. Confirm documentation mentions: Clean generated source caches after tests
+- [x] 808. Keep `.venv` ignored after tests
+- [x] 809. Review evidence for: Keep `.venv` ignored after tests
+- [x] 810. Confirm documentation mentions: Keep `.venv` ignored after tests
+- [x] 811. Keep `.pytest_cache` ignored if pytest is used later
+- [x] 812. Review evidence for: Keep `.pytest_cache` ignored if pytest is used later
+- [x] 813. Confirm documentation mentions: Keep `.pytest_cache` ignored if pytest is used later
+- [x] 814. Re-run tests after README/doc changes if code changed
+- [x] 815. Review evidence for: Re-run tests after README/doc changes if code changed
+- [x] 816. Confirm documentation mentions: Re-run tests after README/doc changes if code changed
+
+## Graph Builder
+
+- [x] 817. Create AST graph builder module
+- [x] 818. Review evidence for: Create AST graph builder module
+- [x] 819. Confirm documentation mentions: Create AST graph builder module
+- [x] 820. Parse Python source files with `ast`
+- [x] 821. Review evidence for: Parse Python source files with `ast`
+- [x] 822. Confirm documentation mentions: Parse Python source files with `ast`
+- [x] 823. Walk every Python file under source root
+- [x] 824. Review evidence for: Walk every Python file under source root
+- [x] 825. Confirm documentation mentions: Walk every Python file under source root
+- [x] 826. Create nodes for classes
+- [x] 827. Review evidence for: Create nodes for classes
+- [x] 828. Confirm documentation mentions: Create nodes for classes
+- [x] 829. Create nodes for functions
+- [x] 830. Review evidence for: Create nodes for functions
+- [x] 831. Confirm documentation mentions: Create nodes for functions
+- [x] 832. Create nodes for methods
+- [x] 833. Review evidence for: Create nodes for methods
+- [x] 834. Confirm documentation mentions: Create nodes for methods
+- [x] 835. Create contains edges from class to method
+- [x] 836. Review evidence for: Create contains edges from class to method
+- [x] 837. Confirm documentation mentions: Create contains edges from class to method
+- [x] 838. Create call edges from function scopes
+- [x] 839. Review evidence for: Create call edges from function scopes
+- [x] 840. Confirm documentation mentions: Create call edges from function scopes
+- [x] 841. Resolve simple function call names
+- [x] 842. Review evidence for: Resolve simple function call names
+- [x] 843. Confirm documentation mentions: Resolve simple function call names
+- [x] 844. Resolve attribute call names
+- [x] 845. Review evidence for: Resolve attribute call names
+- [x] 846. Confirm documentation mentions: Resolve attribute call names
+- [x] 847. Track nested scope during traversal
+- [x] 848. Review evidence for: Track nested scope during traversal
+- [x] 849. Confirm documentation mentions: Track nested scope during traversal
+- [x] 850. Store file-relative node metadata
+- [x] 851. Review evidence for: Store file-relative node metadata
+- [x] 852. Confirm documentation mentions: Store file-relative node metadata
+- [x] 853. Store node kind metadata
+- [x] 854. Review evidence for: Store node kind metadata
+- [x] 855. Confirm documentation mentions: Store node kind metadata
+- [x] 856. Store node name metadata
+- [x] 857. Review evidence for: Store node name metadata
+- [x] 858. Confirm documentation mentions: Store node name metadata
+- [x] 859. Calculate degree centrality
+- [x] 860. Review evidence for: Calculate degree centrality
+- [x] 861. Confirm documentation mentions: Calculate degree centrality
+- [x] 862. Sort nodes deterministically
+- [x] 863. Review evidence for: Sort nodes deterministically
+- [x] 864. Confirm documentation mentions: Sort nodes deterministically
+- [x] 865. Sort edge tuples deterministically
+- [x] 866. Review evidence for: Sort edge tuples deterministically
+- [x] 867. Confirm documentation mentions: Sort edge tuples deterministically
+- [x] 868. Convert edges to JSON objects after sorting
+- [x] 869. Review evidence for: Convert edges to JSON objects after sorting
+- [x] 870. Confirm documentation mentions: Convert edges to JSON objects after sorting
+- [x] 871. Write graph to artifacts folder
+- [x] 872. Review evidence for: Write graph to artifacts folder
+- [x] 873. Confirm documentation mentions: Write graph to artifacts folder
+- [x] 874. Create artifacts folder if needed
+- [x] 875. Review evidence for: Create artifacts folder if needed
+- [x] 876. Confirm documentation mentions: Create artifacts folder if needed
+- [x] 877. Include graph metadata
+- [x] 878. Review evidence for: Include graph metadata
+- [x] 879. Confirm documentation mentions: Include graph metadata
+- [x] 880. Include source root metadata
+- [x] 881. Review evidence for: Include source root metadata
+- [x] 882. Confirm documentation mentions: Include source root metadata
+- [x] 883. Expose `build_graph` function
+- [x] 884. Review evidence for: Expose `build_graph` function
+- [x] 885. Confirm documentation mentions: Expose `build_graph` function
+- [x] 886. Expose `write_graph` function
+- [x] 887. Review evidence for: Expose `write_graph` function
+- [x] 888. Confirm documentation mentions: Expose `write_graph` function
+- [x] 889. Add CLI graph command
+- [x] 890. Review evidence for: Add CLI graph command
+- [x] 891. Confirm documentation mentions: Add CLI graph command
+- [x] 892. Run graph command from `.venv`
+- [x] 893. Review evidence for: Run graph command from `.venv`
+- [x] 894. Confirm documentation mentions: Run graph command from `.venv`
+- [x] 895. Verify graph JSON exists
+- [x] 896. Review evidence for: Verify graph JSON exists
+- [x] 897. Confirm documentation mentions: Verify graph JSON exists
+- [x] 898. Verify graph JSON has 36 nodes
+- [x] 899. Review evidence for: Verify graph JSON has 36 nodes
+- [x] 900. Confirm documentation mentions: Verify graph JSON has 36 nodes
+
+## Status Legend
+
+- Checked tasks are already completed or verified in the current repository state.
+- Unchecked tasks are final review or optional polish tasks that can be revisited before submission. At this checkpoint, all tracked tasks are checked.
+- Total tracked tasks: 900.
