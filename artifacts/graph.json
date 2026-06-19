@@ -1,7 +1,12 @@
 {
   "metadata": {
-    "tool": "local-ast-grphify",
-    "source_root": "C:\\Users\\Aisha\\Desktop\\AI\\uoh-ay26-gaphify-obcidian-reverse-engineering\\src"
+    "tool": "local-grphify-compatible",
+    "purpose": "EX04 graph-guided reverse engineering",
+    "evidence_scale": [
+      "extracted",
+      "inferred",
+      "ambiguous"
+    ]
   },
   "nodes": [
     {
@@ -58,7 +63,35 @@
       "kind": "function",
       "file": "gaphify_re/cli.py",
       "name": "main",
-      "centrality": 11
+      "centrality": 12
+    },
+    {
+      "id": "gaphify_re/crew_agent.py::CrewResult",
+      "kind": "class",
+      "file": "gaphify_re/crew_agent.py",
+      "name": "CrewResult",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/crew_agent.py::CrewStep",
+      "kind": "class",
+      "file": "gaphify_re/crew_agent.py",
+      "name": "CrewStep",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/crew_agent.py::build_crewai_crew",
+      "kind": "function",
+      "file": "gaphify_re/crew_agent.py",
+      "name": "build_crewai_crew",
+      "centrality": 4
+    },
+    {
+      "id": "gaphify_re/crew_agent.py::run_crewai_bug_hunt",
+      "kind": "function",
+      "file": "gaphify_re/crew_agent.py",
+      "name": "run_crewai_bug_hunt",
+      "centrality": 4
     },
     {
       "id": "gaphify_re/domain.py::ProjectPlan",
@@ -180,6 +213,41 @@
       "centrality": 4
     },
     {
+      "id": "gaphify_re/grphify_runner.py::_repair_edges",
+      "kind": "function",
+      "file": "gaphify_re/grphify_runner.py",
+      "name": "_repair_edges",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/grphify_runner.py::_with_evidence",
+      "kind": "function",
+      "file": "gaphify_re/grphify_runner.py",
+      "name": "_with_evidence",
+      "centrality": 0
+    },
+    {
+      "id": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "kind": "function",
+      "file": "gaphify_re/grphify_runner.py",
+      "name": "build_grphify_graph",
+      "centrality": 5
+    },
+    {
+      "id": "gaphify_re/grphify_runner.py::summarize_graph",
+      "kind": "function",
+      "file": "gaphify_re/grphify_runner.py",
+      "name": "summarize_graph",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "kind": "function",
+      "file": "gaphify_re/grphify_runner.py",
+      "name": "write_grphify_outputs",
+      "centrality": 5
+    },
+    {
       "id": "gaphify_re/parser.py::ParseError",
       "kind": "class",
       "file": "gaphify_re/parser.py",
@@ -236,11 +304,18 @@
       "centrality": 1
     },
     {
+      "id": "gaphify_re/token_meter.py::_mode",
+      "kind": "function",
+      "file": "gaphify_re/token_meter.py",
+      "name": "_mode",
+      "centrality": 3
+    },
+    {
       "id": "gaphify_re/token_meter.py::compare_modes",
       "kind": "function",
       "file": "gaphify_re/token_meter.py",
       "name": "compare_modes",
-      "centrality": 5
+      "centrality": 3
     },
     {
       "id": "gaphify_re/token_meter.py::estimate_tokens",
@@ -255,608 +330,1450 @@
       "file": "gaphify_re/token_meter.py",
       "name": "measure_paths",
       "centrality": 5
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::Question",
+      "kind": "class",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "Question",
+      "centrality": 3
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::ask_question",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "ask_question",
+      "centrality": 3
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::final_message",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "final_message",
+      "centrality": 1
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::mathsquiz/quiz_core.py::Question.answer",
+      "kind": "method",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "answer",
+      "centrality": 1
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::mathsquiz/quiz_core.py::Question.prompt",
+      "kind": "method",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "prompt",
+      "centrality": 1
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::print_final_scores",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "print_final_scores",
+      "centrality": 2
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::random_questions",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "random_questions",
+      "centrality": 4
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::run_quiz",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "run_quiz",
+      "centrality": 7
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::welcome_message",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "welcome_message",
+      "centrality": 1
+    },
+    {
+      "id": "polygons/polygons.py::Polygon",
+      "kind": "class",
+      "file": "polygons/polygons.py",
+      "name": "Polygon",
+      "centrality": 1
+    },
+    {
+      "id": "polygons/polygons.py::calc_polygon_details",
+      "kind": "function",
+      "file": "polygons/polygons.py",
+      "name": "calc_polygon_details",
+      "centrality": 2
+    },
+    {
+      "id": "polygons/polygons.py::draw_polygon",
+      "kind": "function",
+      "file": "polygons/polygons.py",
+      "name": "draw_polygon",
+      "centrality": 8
+    },
+    {
+      "id": "polygons/polygons.py::main",
+      "kind": "function",
+      "file": "polygons/polygons.py",
+      "name": "main",
+      "centrality": 7
+    },
+    {
+      "id": "polygons/polygons.py::polygon_as_dict",
+      "kind": "function",
+      "file": "polygons/polygons.py",
+      "name": "polygon_as_dict",
+      "centrality": 0
     }
   ],
   "edges": [
     {
+      "source": "data/upstream_broken_python/mathsquiz/mathsquiz-step1.py",
+      "target": "fixed/broken-python/mathsquiz/mathsquiz-step1.py",
+      "type": "repairs",
+      "evidence": "inferred",
+      "confidence": 0.85
+    },
+    {
+      "source": "data/upstream_broken_python/mathsquiz/mathsquiz-step2.py",
+      "target": "fixed/broken-python/mathsquiz/mathsquiz-step2.py",
+      "type": "repairs",
+      "evidence": "inferred",
+      "confidence": 0.85
+    },
+    {
+      "source": "data/upstream_broken_python/mathsquiz/mathsquiz-step3.py",
+      "target": "fixed/broken-python/mathsquiz/mathsquiz-step3.py",
+      "type": "repairs",
+      "evidence": "inferred",
+      "confidence": 0.85
+    },
+    {
+      "source": "data/upstream_broken_python/mathsquiz/mathsquiz.py",
+      "target": "fixed/broken-python/mathsquiz/mathsquiz.py",
+      "type": "repairs",
+      "evidence": "inferred",
+      "confidence": 0.85
+    },
+    {
+      "source": "data/upstream_broken_python/polygons/polygons.py",
+      "target": "fixed/broken-python/polygons/polygons.py",
+      "type": "repairs",
+      "evidence": "inferred",
+      "confidence": 0.85
+    },
+    {
       "source": "gaphify_re/agent_workflow.py::InvestigationState",
       "target": "field",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "RuntimeError",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "StateGraph",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "add_edge",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "add_node",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "compile",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
       "target": "set_entry_point",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::inspect_suspects",
       "target": "append",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::inspect_suspects",
       "target": "estimate_tokens",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::inspect_suspects",
       "target": "read_text",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::load_graph_context",
       "target": "append",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::load_graph_context",
       "target": "estimate_tokens",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::load_graph_context",
       "target": "read_text",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::run_workflow",
       "target": "InvestigationState",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/agent_workflow.py::run_workflow",
       "target": "step",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "ArgumentParser",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "add_argument",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "compare_modes",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "cwd",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "len",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "parse_args",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "parse_plan",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "print",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "run_crewai_bug_hunt",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "run_workflow",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
       "target": "schedule",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/cli.py::main",
-      "target": "write_graph",
-      "type": "calls"
+      "target": "write_grphify_outputs",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::CrewResult",
+      "target": "dataclass",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::CrewStep",
+      "target": "dataclass",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::build_crewai_crew",
+      "target": "Agent",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::build_crewai_crew",
+      "target": "Crew",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::build_crewai_crew",
+      "target": "RuntimeError",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::build_crewai_crew",
+      "target": "Task",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::run_crewai_bug_hunt",
+      "target": "CrewResult",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::run_crewai_bug_hunt",
+      "target": "estimate_tokens",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::run_crewai_bug_hunt",
+      "target": "read_text",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/crew_agent.py::run_crewai_bug_hunt",
+      "target": "tuple",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::ProjectPlan",
       "target": "field",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::ProjectPlan",
       "target": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.add",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::ProjectPlan",
       "target": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.roots",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::Task",
       "target": "dataclass",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::Task",
       "target": "gaphify_re/domain.py::gaphify_re/domain.py::Task.finish_time",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.add",
       "target": "ValueError",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.roots",
       "target": "values",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/domain.py::gaphify_re/domain.py::Task.finish_time",
       "target": "max",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::CodeNode",
       "target": "dataclass",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.__init__",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_Visitor",
       "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
-      "type": "contains"
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::_call_name",
       "target": "isinstance",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "_Visitor",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "get",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "parse",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "read_text",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "rglob",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "set",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "sorted",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "str",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "update",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "values",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::build_graph",
       "target": "visit",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.__init__",
       "target": "set",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
       "target": "_rel",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
       "target": "join",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
       "target": "as_posix",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
       "target": "relative_to",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
       "target": "append",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
       "target": "generic_visit",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
       "target": "pop",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
       "target": "_call_name",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
       "target": "add",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
       "target": "generic_visit",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
       "target": "CodeNode",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
       "target": "_id",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
       "target": "_rel",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
       "target": "_with_scope",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
       "target": "CodeNode",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
       "target": "_id",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
       "target": "_rel",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
       "target": "_with_scope",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
       "target": "add",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::write_graph",
       "target": "build_graph",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::write_graph",
       "target": "dumps",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::write_graph",
       "target": "mkdir",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/graph_builder.py::write_graph",
       "target": "write_text",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::_repair_edges",
+      "target": "append",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::_repair_edges",
+      "target": "exists",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::_repair_edges",
+      "target": "items",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "target": "_repair_edges",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "target": "_with_evidence",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "target": "build_graph",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "target": "extend",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::build_grphify_graph",
+      "target": "sorted",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::summarize_graph",
+      "target": "get",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::summarize_graph",
+      "target": "len",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::summarize_graph",
+      "target": "sorted",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "target": "build_grphify_graph",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "target": "dumps",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "target": "mkdir",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "target": "summarize_graph",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/grphify_runner.py::write_grphify_outputs",
+      "target": "write_text",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::_meaningful_lines",
       "target": "splitlines",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::_meaningful_lines",
       "target": "startswith",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::_meaningful_lines",
       "target": "strip",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "ParseError",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "ProjectPlan",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "_meaningful_lines",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "add",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "join",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "parse_task_line",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_plan",
       "target": "sorted",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "ParseError",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "Task",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "int",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "len",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "split",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "strip",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/parser.py::parse_task_line",
       "target": "tuple",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::schedule",
       "target": "finish_time",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::schedule",
       "target": "topological_order",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "CycleError",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "add",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "append",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "dict",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "issubset",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "join",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "set",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "sorted",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/scheduler.py::topological_order",
       "target": "values",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::ReadingMode",
       "target": "dataclass",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
-      "source": "gaphify_re/token_meter.py::compare_modes",
+      "source": "gaphify_re/token_meter.py::_mode",
       "target": "ReadingMode",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
-      "source": "gaphify_re/token_meter.py::compare_modes",
+      "source": "gaphify_re/token_meter.py::_mode",
       "target": "len",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "gaphify_re/token_meter.py::_mode",
+      "target": "measure_paths",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::compare_modes",
-      "target": "measure_paths",
-      "type": "calls"
+      "target": "_mode",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::compare_modes",
       "target": "rglob",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::compare_modes",
       "target": "sorted",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::estimate_tokens",
       "target": "len",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::estimate_tokens",
       "target": "max",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::estimate_tokens",
       "target": "round",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::measure_paths",
       "target": "estimate_tokens",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::measure_paths",
       "target": "len",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::measure_paths",
       "target": "read_text",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::measure_paths",
       "target": "splitlines",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     },
     {
       "source": "gaphify_re/token_meter.py::measure_paths",
       "target": "strip",
-      "type": "calls"
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::Question",
+      "target": "dataclass",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::Question",
+      "target": "mathsquiz/quiz_core.py::mathsquiz/quiz_core.py::Question.answer",
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::Question",
+      "target": "mathsquiz/quiz_core.py::mathsquiz/quiz_core.py::Question.prompt",
+      "type": "contains",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::ask_question",
+      "target": "input_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::ask_question",
+      "target": "int",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::ask_question",
+      "target": "print_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::final_message",
+      "target": "ValueError",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::print_final_scores",
+      "target": "final_message",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::print_final_scores",
+      "target": "print_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::random_questions",
+      "target": "Question",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::random_questions",
+      "target": "ValueError",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::random_questions",
+      "target": "randint",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::random_questions",
+      "target": "range",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "ask_question",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "enumerate",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "len",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "list",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "print_final_scores",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "print_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::run_quiz",
+      "target": "welcome_message",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "mathsquiz/quiz_core.py::welcome_message",
+      "target": "print_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::Polygon",
+      "target": "dataclass",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::calc_polygon_details",
+      "target": "Polygon",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::calc_polygon_details",
+      "target": "ValueError",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "Screen",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "Turtle",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "exitonclick",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "forward",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "hasattr",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "pen",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "range",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::draw_polygon",
+      "target": "right",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "calc_polygon_details",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "draw_polygon",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "input_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "int",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "lower",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "polygon_as_dict",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
+    },
+    {
+      "source": "polygons/polygons.py::main",
+      "target": "print_fn",
+      "type": "calls",
+      "evidence": "extracted",
+      "confidence": 1.0
     }
   ]
 }

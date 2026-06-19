@@ -1,0 +1,71 @@
+{
+  "node_count": 60,
+  "edge_count": 192,
+  "evidence_counts": {
+    "inferred": 5,
+    "extracted": 187
+  },
+  "central_nodes": [
+    {
+      "id": "gaphify_re/cli.py::main",
+      "kind": "function",
+      "file": "gaphify_re/cli.py",
+      "name": "main",
+      "centrality": 12
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::build_graph",
+      "kind": "function",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "build_graph",
+      "centrality": 11
+    },
+    {
+      "id": "gaphify_re/scheduler.py::topological_order",
+      "kind": "function",
+      "file": "gaphify_re/scheduler.py",
+      "name": "topological_order",
+      "centrality": 9
+    },
+    {
+      "id": "polygons/polygons.py::draw_polygon",
+      "kind": "function",
+      "file": "polygons/polygons.py",
+      "name": "draw_polygon",
+      "centrality": 8
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::_Visitor",
+      "kind": "class",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_Visitor",
+      "centrality": 7
+    },
+    {
+      "id": "gaphify_re/parser.py::parse_plan",
+      "kind": "function",
+      "file": "gaphify_re/parser.py",
+      "name": "parse_plan",
+      "centrality": 7
+    },
+    {
+      "id": "gaphify_re/parser.py::parse_task_line",
+      "kind": "function",
+      "file": "gaphify_re/parser.py",
+      "name": "parse_task_line",
+      "centrality": 7
+    },
+    {
+      "id": "mathsquiz/quiz_core.py::run_quiz",
+      "kind": "function",
+      "file": "mathsquiz/quiz_core.py",
+      "name": "run_quiz",
+      "centrality": 7
+    }
+  ],
+  "minimal_route": [
+    "obsidian/index.md",
+    "obsidian/hot.md",
+    "reports/BROKEN_PYTHON_REPAIR_MATRIX.md"
+  ]
+}
