@@ -14,3 +14,7 @@
 ## Context Reduction Mechanism
 
 The workflow does not read raw source until graph and Obsidian pages identify the hot path.
+
+## CrewAI-Oriented Workflow
+
+`src/gaphify_re/crew_agent.py` defines three roles: Graph Navigator, Bug Investigator, and Fix Verifier. The deterministic runner reads `artifacts/grphify_summary.json`, `index.md`, and `hot.md` before loading repair evidence. If `crewai` is installed, `build_crewai_crew()` constructs real CrewAI `Agent`, `Task`, and `Crew` objects.

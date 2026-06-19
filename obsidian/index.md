@@ -20,3 +20,9 @@ The project reverse-engineers a small Python task scheduler. Raw task lines are 
 - Where could mixed responsibility or hidden complexity appear?
 - How does graph-guided navigation reduce unnecessary source reading?
 - What changed before and after the fix?
+
+## Rubric Evidence
+
+- [[../reports/ASSIGNMENT_COMPLIANCE.md]] - direct requirement-to-evidence map.
+- [[../reports/GRAPH_REPORT.md]] - Grphify-compatible graph evidence.
+- [[../reports/TOKEN_EFFICIENCY.md]] - naive, graph-guided, and minimal token proof.
