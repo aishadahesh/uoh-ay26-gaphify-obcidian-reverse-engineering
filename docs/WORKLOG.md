@@ -23,3 +23,7 @@ The parser was redesigned into a two-pass flow: parse all tasks, validate depend
 ## Step 6 - Evidence
 
 Unit tests, graph output, Obsidian pages, and reports were added to make the reasoning auditable.
+
+## Step 7 - Gemini Agent Evidence
+
+A Gemini-backed agent path was added after reviewing the token-efficiency requirement. The project now measures the actual prompt packet sent to the AI agent and persists successful API responses as JSON and Markdown reports. README screenshots show the terminal execution.

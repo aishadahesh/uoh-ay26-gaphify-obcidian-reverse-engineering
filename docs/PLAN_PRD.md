@@ -39,3 +39,7 @@ The project investigates a compact Python task scheduler based on the selected a
 - `python -m gaphify_re agent --repo .` prints root cause and fix summary.
 - `python -m gaphify_re tokens --repo .` prints both token modes.
 - README explains what was implemented, what was found, and what changed.
+
+## Gemini Agent Evidence Update
+
+The current implementation includes a Gemini-backed AI bug-finding path. Safe prompt sizing is available through `gemini-prompt`; real API execution through `gemini` persists `artifacts/gemini_agent_result.json` and `reports/GEMINI_AGENT_REPORT.md`.
