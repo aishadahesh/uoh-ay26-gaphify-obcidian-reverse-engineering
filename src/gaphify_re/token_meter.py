@@ -1,4 +1,4 @@
-"""Small token accounting helpers for baseline vs graph-guided evidence."""
+"""Token accounting helpers for naive, graph-guided, and minimal context modes."""
 
 from __future__ import annotations
 
@@ -34,15 +34,24 @@ def measure_paths(paths: list[Path]) -> tuple[int, int]:
 def compare_modes(repo_root: Path) -> list[ReadingMode]:
     naive_paths = sorted((repo_root / "src").rglob("*.py")) + sorted((repo_root / "data").rglob("*.py"))
     guided_paths = [
+        repo_root / "artifacts" / "grphify_summary.json",
         repo_root / "obsidian" / "index.md",
         repo_root / "obsidian" / "hot.md",
         repo_root / "reports" / "BROKEN_PYTHON_REPAIR_MATRIX.md",
-        repo_root / "fixed" / "broken-python" / "mathsquiz" / "quiz_core.py",
         repo_root / "tests" / "test_broken_python_fixed.py",
     ]
-    naive_tokens, naive_units = measure_paths(naive_paths)
-    guided_tokens, guided_units = measure_paths(guided_paths)
-    return [
-        ReadingMode("naive", len(naive_paths), naive_units, naive_tokens, 5, "broad but noisy"),
-        ReadingMode("graph-guided", len(guided_paths), guided_units, guided_tokens, 2, "focused root cause"),
+    minimal_paths = [
+        repo_root / "artifacts" / "grphify_summary.json",
+        repo_root / "obsidian" / "hot.md",
+        repo_root / "reports" / "BROKEN_PYTHON_REPAIR_MATRIX.md",
     ]
+    return [
+        _mode("naive", naive_paths, 5, "broad but noisy"),
+        _mode("graph-guided", guided_paths, 2, "focused root cause with verification"),
+        _mode("minimal-sufficient", minimal_paths, 1, "smallest context packet that still names suspects and fixes"),
+    ]
+
+
+def _mode(name: str, paths: list[Path], iterations: int, quality: str) -> ReadingMode:
+    tokens, units = measure_paths(paths)
+    return ReadingMode(name, len(paths), units, tokens, iterations, quality)
